@@ -9,14 +9,18 @@ require('dotenv').config();
 // --> Definir el puerto en el que correrá el servidor
 const PORT = process.env.PORT || 5000;
 
-const cors= require('cors');
+
+const cors = require('cors');
 App.use(cors());
 App.use(Express.json());
 
+
 // --> Importar las rutas de usuario
-const UsuarioRutas=require('./Router/Usuarios.Router');
+const Router=require('./src/Router/Usuarios.Router')
 // ---> Usar las rutas de usuario con el prefijo /api
-App.use('/api',UsuarioRutas);
+App.use('/api',Router);
+
+
 
 // --> Iniciar el servidor y escuchar en el puerto definido
 App.listen(PORT, () => {
