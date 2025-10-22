@@ -58,10 +58,20 @@ Permite usar variables de entorno desde un archivo `.env`.
 ## Instalar Dependencias
 # BackEnd
 ```shell
-    cd BackEnd
+    cd Server
     npm i
 ```
 # Ejecutar el BackEnd
 ```shell
     npm run Server
+```
+
+# FrontEnd (Client)
+```shell
+    cd Client
+    npm i
+```
+# Ejecutar el FrontEnd
+```shell
+    npm run dev
 ```
