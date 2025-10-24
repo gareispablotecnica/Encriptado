@@ -7,10 +7,12 @@ const Salto=10;
 const EncriptarPassword= async (password)=>{
     // ---> Generar el salto y encriptar la contraseña
     const Seguridad= await Encriptar.genSalt(Salto)
+    // ---> Retornar la contraseña encriptada
     return Encriptar.hash(password,Seguridad)
 }
 //  ----> Funcion para desencriptar la contraseña
 const DesincriptarPassword= async (password,hash)=>{
+    // ---> Retornar si la contraseña coincide con el hash
     return Encriptar.compare(password,hash)
 }
 
