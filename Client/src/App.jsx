@@ -1,5 +1,5 @@
-import Layouts from "./Components/Layouts"
-
+// import Layouts from "./Components/Layouts"
+import Login from './Components/Login.jsx';
 function App() {
 
   return (
@@ -10,7 +10,8 @@ function App() {
       - Enrutar el formulario de Registro al componente Layouts.jsx
       Con la importacion de los componentes correspondientes
     */}
-      <Layouts />
+      {/* <Layouts /> */}
+      <Login />
     </>
   )
 }

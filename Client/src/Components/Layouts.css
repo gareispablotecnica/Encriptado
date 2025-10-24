@@ -63,3 +63,66 @@ form:hover {
   transform: scale(1.01);
   transition: transform 0.3s ease;
 }
+
+
+form {
+  background-color: #1e1e2f; /* Fondo oscuro */
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  margin: 100px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #cfcfe8;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #26263d;
+  color: #e8e8f7;
+  margin-bottom: 18px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  background-color: #e8efff;
+  color: #000;
+  box-shadow: 0 0 5px #6366f1;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4f46e5, #5b3ff8);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: linear-gradient(90deg, #5b3ff8, #6a4dfc);
+  transform: scale(1.03);
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+  color: #4ade80; /* verde para mensaje */
+}

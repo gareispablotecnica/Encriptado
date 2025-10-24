@@ -1,7 +1,7 @@
 // ---> Sirve para invocar la Base de Datos
 const db = require('../DataBase/db')
 // ---> Sirve para encriptar y desencriptar las contraseñas
-const { EncriptarPassword, DesincriptarPassword } = require('../Utils/PasswordHash')
+const { EncriptarPassword, DesincriptarPassword } = require('../Utils/HashPassword')
 
 const NuevoUsuario = async (req, res) => {
     //  ---> Obtenemos los Datos del Usuario

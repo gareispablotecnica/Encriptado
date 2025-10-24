@@ -20,7 +20,7 @@ function Layouts() {
     // ---> Peticion al servidor
     try {
       // ---> Enviar datos al servidor
-      const ServidorBack = await axios.post('http://localhost:3000/api/Registrar', {
+      const ServidorBack = await axios.post('http://localhost:3000/api/RegistrarUsuario', {
         User,
         Password,
         Name
